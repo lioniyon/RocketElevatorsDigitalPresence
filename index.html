@@ -434,7 +434,7 @@
 
 							<h3 class="mt-10">Multi-award Winning Company</h3>
 							<p>We have won numerous awards and participated in many major projects both nationally and internationally </p>
-							<a href="#" class="#portfolio">READ MORE</a>
+							<a href="#portfolio" class="#portfolio">READ MORE</a>
 						</div>
 
 						<div class="col-sm-4">
@@ -443,14 +443,14 @@
 							</a>
 							<h3 class="mt-10">Best service for residential buildings</h3>
 							<p>We offer top-notch residential vertical transportation that are second to none in the industry.Safety and elegant designs are always at the top of our priorities</p>
-							<a href="#" class="residential.html">READ MORE</a>
+							<a href="residential.html" class="residential.html">READ MORE</a>
 						</div>
 
 						<div class="col-sm-4">
 							<img class="img-fluid" src="RocketElevatorAssets/AdobeStock_179073967.jpeg" alt="img" />
 							<h3 class="mt-10">Leading in corporate vertical transportation services  </h3>
 							<p>We offer top-notch corporate vertical transportation that are second to none in the industry.Safety and elegant designs are always at the top of our priorities </p>
-							<a href="#" class="commercial.html">READ MORE</a>
+							<a href="commercial.html" class="commercial.html">READ MORE</a>
 						</div>
 
 					</div>
@@ -1298,7 +1298,12 @@
 
 								<div class="row">
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
+										<button  type="submit" class="btn btn-primary"  onclick="sendingAlert()"><i class="fa fa-check"></i> SEND MESSAGE</button>
+										<script>
+											function sendingAlert() {
+												alert("Thank you for sending us a message. We will be back to you shortly!");
+											}
+										</script>
 									</div>
 								</div>
 							 </form> 
@@ -1446,5 +1451,6 @@
 			});
 
 		</script>
+		
 	</body>
 </html>
