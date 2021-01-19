@@ -184,12 +184,12 @@
 
 	<form id="res"> 
 		<legend>Residential</legend>
-		Number of apartment:
-		<input  type="number" id="res_apt" value="0" min="0" "> <br>
-	     Number of floors
-		<input  type="number" id="res_flo" value="0" min="0" "><br>
-		Number of basements
-		<input  type="number" id="res_bas" value="0" min="0" "><br>
+		<label for="res_apt">Number of apartment:</label>
+		<input  type="number" id="res_apt" value="0" min="0" > <br>
+		<label for="res_flo">Number of floors:</label>
+		<input  type="number" id="res_flo" value="0" min="0" ><br>
+		<label for="res_bas">Number of basements:</label>
+		<input  type="number" id="res_bas" value="0" min="0" ><br>
 	  </form> 
 	 
 	  <form id="com">
@@ -225,18 +225,37 @@
 	 <form id="hyb">
 		<legend>Hybrid</legend>
 		Number of distinct businesses:
-	   <input class=" form-control" type="number" id="corp_business" value="0" min="0" ><br>
+	   <input  type="number" id="corp_business" value="0" min="0" ><br>
 		Number of floors contained in the building, excluding basements:
-	   <input class=" form-control" type="number" id="corp_floors" value="0" min="0" ><br>
+	   <input  type="number" id="corp_floors" value="0" min="0" ><br>
 	    Number of basements contained in the building:
-	   <input class=" form-control" type="number" id="corp_basements" value="0" min="0" ><br>
+	   <input  type="number" id="corp_basements" value="0" min="0" ><br>
 	    Number of parking space available:
-	   <input class=" form-control" type="number" id="corp_parking" value="0" min="0" ><br>
+	   <input  type="number" id="corp_parking" value="0" min="0" ><br>
 	    Maximum number of occupants per floo:
-	   <input class=" form-control" type="number" id="corp_occupants" value="0" min="0" ><br>
+	   <input  type="number" id="corp_occupants" value="0" min="0" ><br>
 	   Number of hours of activity of the building (the maximum being 24):
-	   <input class=" form-control" type="number"  max="24" id="corp_activity" value="0" min="0"><br>
+	   <input  type="number"  max="24" id="corp_activity" value="0" min="0"><br>
 	 </form> 
+ <form >
+	<legend>Product Line</legend>
+	<label for="standard">Standard</label>
+	<input type="radio" id="standard" name="productLine" value="standard"><br>
+    <label for="premium">Premium</label>
+<input type="radio" id="premium" name="productLine" value="premium"><br>
+<label for="excelium">Excelium</label>
+<input type="radio" id="excelium" name="productLine" value="excelium">
+
+</form>
+<input  type="number" id="corp_business" value="0" min="0" ><br>
+<input  type="number" id="corp_business" value="0" min="0" ><br>
+<input  type="number" id="corp_business" value="0" min="0" ><br>
+<input  type="number" id="corp_business" value="0" min="0" ><br>
+<input  type="number" id="corp_business" value="0" min="0" ><br>
+<form >
+
+</form>
+
     </center>
 
 

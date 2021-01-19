@@ -1,31 +1,60 @@
 
 
-    $("#res, #com,#corp , #hyb").hide();
 
+hideAll();
 
 $("#building-type").on("change", function(dropdownEvent){
     dropdownEvent.preventDefault();
-    var input = $("#building-type").val();
-  
-    if(input==="residential")
+    hideAll();
+    if(isResidential())
     {
-        $("#res, #com,#corp , #hyb").hide();
         $("#res").show();
     }
-    else if (input==="commercial")
+    else if (isCommercial())
     {
-        $("#res, #com,#corp , #hyb").hide();
         $("#com").show();
     }
-    else if (input==="corporate")
+    else if (isCorporate())
     {
-        $("#res, #com,#corp , #hyb").hide();
+      
         $("#corp").show();
     }
-    else if (input==="hybrid")
+    else if (isHybrid())
     {
-        $("#res, #com,#corp , #hyb").hide();
+       
         $("#hyb").show();
     }
     
-})
+});
+
+function hideAll()
+{
+    $("#res, #com,#corp , #hyb").hide();
+}
+
+function isResidential()
+{
+    var input = $("#building-type").val();
+     return input==="residential";
+}
+/** gettter */
+function getBuildingType()
+{
+    return $("#building-type").val();
+}
+
+/*Boolean functions */
+function isCommercial()
+{ 
+     return getBuildingType()==="commercial";
+}
+
+function isCorporate()
+{
+     return getBuildingType()==="corporate";
+}
+
+function isHybrid()
+{
+     return getBuildingType()==="hybrid";
+}
