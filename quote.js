@@ -20,21 +20,12 @@ $("#building-type").on("change", function(dropdownEvent){
     else if (isHybrid())
     {
         $("#hyb").show();
-    }
-    
+    } 
 });
 
 function hideAll(){
     $("#res,#com,#corp, #hyb").hide();
-    
-
 }
-
-
-
-
-
-    
 
 
 /* putting unit price after selcting the product line */
@@ -51,8 +42,6 @@ $("input[name='productLine']").on("click", function(){
        var installationFees=totalPriceforElevator *0.10;
        $("#installation_fees").val(installationFees);
        $("#final_price").val(totalPriceforElevator+installationFees);
-      
-
     }
     else if (productLineType==="12345")
     {
