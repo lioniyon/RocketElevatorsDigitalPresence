@@ -174,7 +174,7 @@
     <form>
       Buidling Type: 
 	  <select id="building-type" >
-		     <option id="" value="" >---------------------</option>
+		     <option >---------------------</option>
 			 <option id="residential" value="residential" >Residential</option>
 			 <option id="commercial" value="commercial" >Commercial</option>
 			 <option id="corporate" value="corporate" >Corporate</option>
@@ -194,73 +194,75 @@
 	 
 	  <form id="com">
 		<legend>Commercial</legend>
-		 Number of distinct businesses:
+		<label for="com_bus">Number of distinct businesses:</label>
 		<input  type="number" id="com_bus" value="0" min="0"><br>
-		 Number of floors contained in the building, excluding basements:
+		<label for="com_flo">Number of floors contained in the building, excluding basements:</label>
 		<input  type="number" id="com_flo" value="0" min="0" ><br>
-		Nnumber of basements contained in the building:
+        <label for="com_bas">Number of basements contained in the building:</label>
 		<input  type="number" id="com_bas" value="0" min="0" ><br>
-		Number of parking space available:
+		<label for="com_par">Number of parking space available:</label>
 		<input  type="number" id="com_par" value="0" min="0" ><br>
-		Nnumber of elevator cages to be deployed:
+        <label for="com_ela">Number of elevator cages to be deployed:</label>
 		<input  type="number" id="com_ela" value="0" min="0"><br>
 	  </form> 
 
 	  
 	  <form id="corp">
 		<legend>Corporate</legend>
-		Number of separate tenant companies:
-	   <input class=" form-control" type="number" id="corp_tenant" value="0" min="0" ><br>
-		Number of floors contained in the building, excluding basements:
-	   <input class=" form-control" type="number" id="corp_floors" value="0" min="0"><br>
-	    Number of basements contained in the building:
-	   <input class=" form-control" type="number" id="corp_basements" value="0" min="0" ><br>
-	    Number of parking space available:
-	   <input class=" form-control" type="number" id="corp_parking" value="0" min="0" ><br>
-	    Maximum number of occupants per floo:
-	   <input class=" form-control" type="number" id="corp_occupants" value="0" min="0"><br>
+		<label for="corp_tenant">Number of separate tenant companies:</label>
+	   <input  type="number" id="corp_tenant" value="0" min="0" ><br>
+	   <label for="corp_floors">Number of floors contained in the building, excluding basements:</label>
+	   <input  type="number" id="corp_floors" value="0" min="0"><br>
+	   <label for="corp_basements">Number of basements contained in the building:</label>
+	   <input type="number" id="corp_basements" value="0" min="0" ><br>
+	   <label for="corp_parking">Number of parking space available:</label>
+	   <input  type="number" id="corp_parking" value="0" min="0" ><br>
+	   <label for="corp_occupants">Maximum number of occupants per floo:</label>
+	   <input  type="number" id="corp_occupants" value="0" min="0"><br>
 	 </form> 
 
 	  
 	 <form id="hyb">
 		<legend>Hybrid</legend>
-		Number of distinct businesses:
-	   <input  type="number" id="corp_business" value="0" min="0" ><br>
-		Number of floors contained in the building, excluding basements:
-	   <input  type="number" id="corp_floors" value="0" min="0" ><br>
-	    Number of basements contained in the building:
-	   <input  type="number" id="corp_basements" value="0" min="0" ><br>
-	    Number of parking space available:
-	   <input  type="number" id="corp_parking" value="0" min="0" ><br>
-	    Maximum number of occupants per floo:
-	   <input  type="number" id="corp_occupants" value="0" min="0" ><br>
-	   Number of hours of activity of the building (the maximum being 24):
-	   <input  type="number"  max="24" id="corp_activity" value="0" min="0"><br>
+		<label for="hyb_business">Number of distinct businesses:</label>
+	   <input  type="number" id="hyb_business" value="0" min="0" ><br>
+	   <label for="hyb_floors">Number of floors contained in the building, excluding basements:</label>
+	   <input  type="number" id="hyb_floors" value="0" min="0" ><br>
+	    <label for="hyb_basements">Number of basements contained in the building:</label>
+	    <input  type="number" id="hyb_basements" value="0" min="0" ><br>
+	   <label for="hyb_parking">Number of parking space available:</label>
+	   <input  type="number" id="hyb_parking" value="0" min="0" ><br>
+	   <label for="hyb_occupants"> Maximum number of occupants per floo:</label>  
+	   <input  type="number" id="hyb_occupants" value="0" min="0" ><br>
+	   <label for="hyb_activity">Number of hours of activity of the building (the maximum being 24):</label>
+	   <input  type="number"  max="24" id="hyb_activity" value="0" min="0"><br>
 	 </form> 
- <form >
+
+ <form id="productLine_id" >
 	<legend>Product Line</legend>
 	<label for="standard">Standard</label>
-	<input type="radio" id="standard" name="productLine" value="standard"><br>
+	<input type="radio" id="standard" name="productLine" value="7565"><br>
     <label for="premium">Premium</label>
-<input type="radio" id="premium" name="productLine" value="premium"><br>
-<label for="excelium">Excelium</label>
-<input type="radio" id="excelium" name="productLine" value="excelium">
+    <input type="radio" id="premium" name="productLine" value="12345"><br>
+    <label for="excelium">Excelium</label>
+     <input type="radio" id="excelium" name="productLine" value="15400">
+ </form>
 
-</form>
-<input  type="number" id="corp_business" value="0" min="0" ><br>
-<input  type="number" id="corp_business" value="0" min="0" ><br>
-<input  type="number" id="corp_business" value="0" min="0" ><br>
-<input  type="number" id="corp_business" value="0" min="0" ><br>
-<input  type="number" id="corp_business" value="0" min="0" ><br>
-<form >
-
+<form id="resultsId">
+   <legend>Results</legend>
+  <label for="num_of_elevators">The amount of elevators needed:</label>
+  <input  type="number" id="num_of_elevators" value="0" min="0" readonly><br>
+  <label for="unit_price">The unit price of each elevator:</label>
+  <input  type="number" id="unit_price" value="0" min="0" readonly><br>
+  <label for="total_price">The total price of the elevators:</label>
+  <input  type="number" id="total_price" value="0" min="0" readonly><br>
+  <label for="installation_fees">The installation fees:</label>
+  <input  type="number" id="installation_fees" value="0" min="0" readonly><br>
+  <label for="final_price">The final price:</label>
+  <input  type="number" id="final_price" value="0" min="0" readonly><br>
 </form>
 
     </center>
-
-
-
-
 
 </div>
 
