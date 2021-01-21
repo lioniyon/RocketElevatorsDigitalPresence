@@ -1,6 +1,7 @@
 hideAll();
 $("#building-type").on("change", function (dropdownEvent) {
   dropdownEvent.preventDefault();
+  console.log(6);
   hideAll();
   if (isResidential()) {
     $("#res").show();
