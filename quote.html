@@ -19,14 +19,13 @@
 	<!-- CORE CSS -->
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-	<!-- REVOLUTION SLIDER -->
-	<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-	<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
 
 	<!-- THEME CSS -->
 	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
 
+	<!-- Quote CSS -->
+	<link href="assets\css\quote.css" rel="stylesheet" type="text/css" />
 	<!-- PAGE LEVEL SCRIPTS -->
 	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
@@ -171,15 +170,15 @@
 
 
 
+<!-- Quote form-->
+		<form id="quote"> 
 
-
-
-		<form>
-
-			<center>
+				
 				<h3>Request a quote for your project</h3>
+				<!-- Dropdown menu for the building type-->
 				<div>
-					Buidling Type:
+					<legend>Buidling Type:</legend>
+					
 					<select id="building-type">
 						<option>----Select----</option>
 						<option id="residential" value="residential">Residential</option>
@@ -188,110 +187,111 @@
 						<option id="hybrid" value="hybrid">Hybrid</option>
 					</select>
 				</div>
-
+				
+                <!--Residential form -->
 				<div id="res">
 					<legend>Residential</legend>
 					<div id="number-of-apartments">
 						<label for="res_apt">Number of apartment:</label>
-						<input type="number" id="res_apt" value="0" min="0"> <br>
+						<input type="number" id="res_apt" placeholder="0" min="0"> <br>
 					</div>
 					<div id="number-of-floors">
 						<label for="res_flo">Number of floors:</label>
-						<input type="number" id="res_flo" value="0" min="0"><br>
+						<input type="number" id="res_flo" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-basements">
 						<label for="res_bas">Number of basements:</label>
-						<input type="number" id="res_bas" value="0" min="0"><br>
+						<input type="number" id="res_bas" placeholder="0" min="0"><br>
 					</div>
 
 				</div>
 
-
-
+				
+               <!--Residential Form-->
 				<div id="com">
 					<legend>Commercial</legend>
 					<div id="number-of-floors">
 						<label for="com_flo">Number of floors contained in the building, excluding basements:</label>
-						<input type="number" id="com_flo" value="0" min="0"><br>
+						<input type="number" id="com_flo" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-basements">
 						<label for="com_bas">Number of basements contained in the building:</label>
-						<input type="number" id="com_bas" value="0" min="0"><br>
+						<input type="number" id="com_bas" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-companies">
 						<label for="com_bus">Number of distinct businesses:</label>
-						<input type="number" id="com_bus" value="0" min="0"><br>
+						<input type="number" id="com_bus" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-parking-spots">
 						<label for="com_par">Number of parking space available:</label>
-						<input type="number" id="com_par" value="0" min="0"><br>
+						<input type="number" id="com_par" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-elevators">
 						<label for="com_ela">Number of elevator cages to be deployed:</label>
-						<input type="number" id="com_ela" value="0" min="0"><br>
+						<input type="number" id="com_ela" placeholder="0" min="0"><br>
 					</div>
 
 				</div>
 
 
-
+                <!--Corporate form -->
 
 				<div id="corp">
 					<legend>Corporate</legend>
 					<div id="number-of-floors">
 						<label for="corp_floors">Number of floors contained in the building, excluding
 							basements:</label>
-						<input type="number" id="corp_floors" value="0" min="0"><br>
+						<input type="number" id="corp_floors" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-basements">
 						<label for="corp_basements">Number of basements contained in the building:</label>
-						<input type="number" id="corp_basements" value="0" min="0"><br>
+						<input type="number" id="corp_basements" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-parking-spots">
 						<label for="corp_parking">Number of parking space available:</label>
-						<input type="number" id="corp_parking" value="0" min="0"><br>
+						<input type="number" id="corp_parking" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-corporations">
 						<label for="corp_tenant">Number of separate tenant companies:</label>
-						<input type="number" id="corp_tenant" value="0" min="0"><br>
+						<input type="number" id="corp_tenant" placeholder="0" min="0"><br>
 					</div>
 					<div id="maximum-occupancy">
-						<label for="corp_occupants">Maximum number of occupants per floo:</label>
-						<input type="number" id="corp_occupants" value="0" min="0"><br>
+						<label for="corp_occupants">Maximum number of occupants per floor:</label>
+						<input type="number" id="corp_occupants" placeholder="0" min="0"><br>
 					</div>
 				</div>
 
-
+                <!--Hybrid form -->
 				<div id="hyb">
 					<legend>Hybrid</legend>
 
 					<div id="number-of-floors">
 						<label for="hyb_floors">Number of floors contained in the building, excluding basements:</label>
-						<input type="number" id="hyb_floors" value="0" min="0"><br>
+						<input type="number" id="hyb_floors" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-basements">
 						<label for="hyb_basements">Number of basements contained in the building:</label>
-						<input type="number" id="hyb_basements" value="0" min="0"><br>
+						<input type="number" id="hyb_basements" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-companies">
 						<label for="hyb_business">Number of distinct businesses:</label>
-						<input type="number" id="hyb_business" value="0" min="0"><br>
+						<input type="number" id="hyb_business" placeholder="0" min="0"><br>
 					</div>
 					<div id="number-of-parking-spots">
 						<label for="hyb_parking">Number of parking space available:</label>
-						<input type="number" id="hyb_parking" value="0" min="0"><br>
+						<input type="number" id="hyb_parking" placeholder="0" min="0"><br>
 					</div>
 					<div id="maximum-occupancy">
-						<label for="hyb_occupants"> Maximum number of occupants per floo:</label>
-						<input type="number" id="hyb_occupants" value="0" min="0"><br>
+						<label for="hyb_occupants"> Maximum number of occupants per floor:</label>
+						<input type="number" id="hyb_occupants" placeholder="0" min="0"><br>
 					</div>
 					<div id="business-hours">
 						<label for="hyb_activity">Number of hours of activity of the building (the maximum being
 							24):</label>
-						<input type="number" max="24" id="hyb_activity" value="0" min="0"><br>
+						<input type="number" max="24" id="hyb_activity" placeholder="0" min="0"><br>
 					</div>
 				</div>
-
+                <!-- Product Line radio button-->
 				<div id="productLine_id">
 					<legend>Product Line</legend>
 					<label for="standard">Standard</label>
@@ -301,7 +301,8 @@
 					<label for="excelium">Excelium</label>
 					<input type="radio" id="excelium" name="productLine" value="15400">
 				</div>
-
+				<!--rResults form -->
+				<div id="resultsIdError"></div>
 				<div id="resultsId">
 					<legend>Results</legend>
 					<div id="elevator-amount">
@@ -322,14 +323,24 @@
 					</div>
 					<div id="final-price">
 						<label for="final_price">The final price:</label>
-						<input type="text" id="final_price" value="CA$0.00"  readonly><br>
+						<input type="text" id="final_price" value="CA$0.00"  readonly>
 					</div>
 					
 				</div>
                        <br>
 				
-				<input type="reset" value="Reset" /> </form>
-			</center>
+
+				<input type="reset"  onClick="hideError()" value="Reset" />
+
+				<script>
+					function hideError() {
+						$("#resultsIdError").hide();
+					}
+				</script>
+				
+
+				
+			
 			
 		</form>
 
